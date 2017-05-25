@@ -1,0 +1,39 @@
+{
+  "users":
+  [
+     {
+		"userId": 1, 
+		"userName":"Eugene", 
+		"userEmail":"hardiaf@gmail.com", 
+		"userPhone":"375(29)1231233", 
+		"userAddress":"akademicheskaya 67-107"
+	 },
+     {
+		"userId": 2, 
+		"userName":"Alex", 
+		"userEmail":"mirageti@gmail.com", 
+		"userPhone":"375(29)4897545", 
+		"userAddress":"centralnaya 13A-7"
+	 },      
+     {
+		"userId": 3, 
+		"userName":"Sam", 
+		"userEmail":"aldon@gmail.com", 
+		"userPhone":"375(29)2648732", 
+		"userAddress":"keramicheskaya 8-63"},      
+     {
+		"userId": 4, 
+		"userName":"Eric", 
+		"userEmail":"lelf@gmail.com", 
+		"userPhone":"375(29)6987564", 
+		"userAddress":"lenina 33-10"
+	 },      
+     {
+		"userId": 5, 
+		"userName":"Govard", 
+		"userEmail":"horeif@gmail.com", 
+		"userPhone":"375(44)8794684", 
+		"userAddress":"pobedi 5-17"
+	 } 
+  ]
+}
