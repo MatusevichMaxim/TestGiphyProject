@@ -18,3 +18,23 @@ C:\Users\Maxim\Desktop\Projects\GitProjects\SimpleList\SimpleList\bin\Debug\Newt
 C:\Users\Maxim\Desktop\Projects\GitProjects\SimpleList\SimpleList\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Maxim\Desktop\Projects\GitProjects\SimpleList\SimpleList\bin\Debug\SimpleList.dll.mdb
 C:\Users\Maxim\Desktop\Projects\GitProjects\SimpleList\SimpleList\obj\Debug\android\assets\SimpleList.dll.mdb
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\SimpleList.dll
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\SimpleList.pdb
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\SimpleList.SimpleList.apk
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\SimpleList.SimpleList-Signed.apk
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\SimpleList.dll
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\SimpleList.pdb
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\bin\SimpleList.SimpleList.apk
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\res\layout\useritem.xml
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\res\layout\userinfo.xml
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\res\layout\main.xml
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\res\values\strings.xml
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\res\drawable\icon.png
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\res\drawable\blank_avatar.jpg
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\res\values\dimens.xml
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\R.cs.flag
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\uploadflags.txt
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\SimpleList.dll.mdb
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\SimpleList.dll.mdb

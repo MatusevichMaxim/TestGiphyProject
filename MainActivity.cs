@@ -37,7 +37,7 @@ namespace SimpleList
             mListView.ItemClick += (s, e) =>
             {
                 Intent intent = new Intent(this, typeof(UserInfo));
-                JSONData.currentUser = e.Position;
+                JSONData.currentUser = list[e.Position].ID;
                 StartActivity(intent);
             };
 
