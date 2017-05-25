@@ -44,6 +44,9 @@ namespace SimpleList
 		public partial class Dimension
 		{
 			
+			// aapt resource value: 0x7f040003
+			public const int gif_side = 2130968579;
+			
 			// aapt resource value: 0x7f040000
 			public const int left_m = 2130968576;
 			
@@ -70,7 +73,10 @@ namespace SimpleList
 			public const int blank_avatar = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public const int cutecat001 = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Icon = 2130837506;
 			
 			static Drawable()
 			{
@@ -85,41 +91,50 @@ namespace SimpleList
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060008
-			public const int address_et = 2131099656;
+			// aapt resource value: 0x7f06000b
+			public const int address_et = 2131099659;
 			
-			// aapt resource value: 0x7f06000a
-			public const int avatar_image = 2131099658;
+			// aapt resource value: 0x7f06000d
+			public const int avatar_image = 2131099661;
 			
-			// aapt resource value: 0x7f060009
-			public const int button_save = 2131099657;
+			// aapt resource value: 0x7f06000c
+			public const int button_save = 2131099660;
 			
 			// aapt resource value: 0x7f060004
-			public const int email_et = 2131099652;
+			public const int button_search_gif = 2131099652;
+			
+			// aapt resource value: 0x7f060007
+			public const int email_et = 2131099655;
+			
+			// aapt resource value: 0x7f060002
+			public const int gifImage = 2131099650;
 			
 			// aapt resource value: 0x7f060001
 			public const int listView1 = 2131099649;
 			
-			// aapt resource value: 0x7f060006
-			public const int phone_et = 2131099654;
+			// aapt resource value: 0x7f060009
+			public const int phone_et = 2131099657;
+			
+			// aapt resource value: 0x7f060003
+			public const int search_gif_et = 2131099651;
 			
 			// aapt resource value: 0x7f060000
 			public const int sort_button = 2131099648;
 			
-			// aapt resource value: 0x7f06000b
-			public const int textView1 = 2131099659;
+			// aapt resource value: 0x7f06000e
+			public const int textView1 = 2131099662;
 			
-			// aapt resource value: 0x7f060003
-			public const int textView2 = 2131099651;
+			// aapt resource value: 0x7f060006
+			public const int textView2 = 2131099654;
+			
+			// aapt resource value: 0x7f060008
+			public const int textView3 = 2131099656;
+			
+			// aapt resource value: 0x7f06000a
+			public const int textView4 = 2131099658;
 			
 			// aapt resource value: 0x7f060005
-			public const int textView3 = 2131099653;
-			
-			// aapt resource value: 0x7f060007
-			public const int textView4 = 2131099655;
-			
-			// aapt resource value: 0x7f060002
-			public const int user_name_text = 2131099650;
+			public const int user_name_text = 2131099653;
 			
 			static Id()
 			{
@@ -164,6 +179,9 @@ namespace SimpleList
 			
 			// aapt resource value: 0x7f050006
 			public const int SaveButtonText = 2131034118;
+			
+			// aapt resource value: 0x7f050008
+			public const int Search = 2131034120;
 			
 			// aapt resource value: 0x7f050007
 			public const int Sort = 2131034119;

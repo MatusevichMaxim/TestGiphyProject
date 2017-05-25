@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="GlideComponent">
+  <name>GlideComponent</name>
+  <publisher>ThanhDat</publisher>
+  <publisher-url>https://github.com/thanhdatbkhn/GlideXamarinBinding</publisher-url>
+  <version>3.7.0</version>
+  <summary>Glide - Image loading &amp; caching library</summary>
+  <samples>
+    <sample id="GlideSample">
+      <name>Android Sample</name>
+      <summary>Android Sample</summary>
+    </sample>
+  </samples>
+</component>
