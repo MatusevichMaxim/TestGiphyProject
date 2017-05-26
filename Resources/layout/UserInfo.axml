@@ -3,6 +3,17 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/gif_imageview"
+            android:layout_width="@dimen/gif_side"
+            android:layout_height="@dimen/gif_side"
+            android:layout_marginLeft="@dimen/left_m"
+            android:layout_marginTop="@dimen/top_m"/>
+    </LinearLayout>
     <TextView
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"

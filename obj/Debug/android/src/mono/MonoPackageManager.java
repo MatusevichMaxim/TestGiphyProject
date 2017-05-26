@@ -99,7 +99,9 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "SimpleList.dll" comes first in this list. */
 		"SimpleList.dll",
+		"GiphyDotNet.dll",
 		"Newtonsoft.Json.dll",
+		"Refractored.GifImageView.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

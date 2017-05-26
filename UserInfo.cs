@@ -13,12 +13,17 @@ using Newtonsoft.Json.Linq;
 using Android.Content.Res;
 using System.IO;
 using Newtonsoft.Json;
+using GiphyDotNet.Manager;
+using GiphyDotNet.Model.Parameters;
+using static Android.App.DownloadManager;
 
 namespace SimpleList
 {
     [Activity(Label = "UserInfo")]
     class UserInfo : Activity
     {
+        ImageView glideImage;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -28,6 +33,9 @@ namespace SimpleList
             EditText uEmail = FindViewById<EditText>(Resource.Id.email_et);
             EditText uPhone = FindViewById<EditText>(Resource.Id.phone_et);
             AutoCompleteTextView uAddress = FindViewById<AutoCompleteTextView>(Resource.Id.address_et);
+
+            glideImage = FindViewById<ImageView>(Resource.Id.gif_imageview);
+            GetGif();
 
             User user = JSONData.usersObj[JSONData.currentUser];
 
@@ -53,6 +61,15 @@ namespace SimpleList
                 Intent intent = new Intent(this, typeof(MainActivity));
                 StartActivity(intent);
             };
+        }
+
+        async void GetGif()
+        {
+            var giphy = new Giphy("dc6zaTOxFJmzC");
+            var gifresult = await giphy.RandomGif(new RandomParameter()
+            {
+                Tag = "american psycho"
+            });
         }
     }
 }

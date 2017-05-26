@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v21</xs:documentation>
-    <xs:documentation>5/25/2017 9:48:41 AM</xs:documentation>
+    <xs:documentation>5/26/2017 12:27:41 AM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -1185,6 +1185,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -1323,6 +1324,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -3001,6 +3003,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -3043,6 +3046,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -3085,6 +3089,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -3127,6 +3132,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -3953,6 +3959,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -4792,6 +4799,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -4834,6 +4842,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -4876,6 +4885,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -4918,6 +4928,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -6170,6 +6181,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -6212,6 +6224,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -7187,6 +7200,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -8430,6 +8444,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="match_parent" />
             <xs:enumeration value="wrap_content" />
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -8779,6 +8794,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="match_parent" />
             <xs:enumeration value="wrap_content" />
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -9167,6 +9183,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -9700,6 +9717,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -16143,6 +16161,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -16270,6 +16289,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -16357,6 +16377,7 @@
             <xs:enumeration value="@id/avatar_image" />
             <xs:enumeration value="@id/button_save" />
             <xs:enumeration value="@id/email_et" />
+            <xs:enumeration value="@id/gif_imageview" />
             <xs:enumeration value="@id/listView1" />
             <xs:enumeration value="@id/phone_et" />
             <xs:enumeration value="@id/sort_button" />
@@ -17487,6 +17508,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -17529,6 +17551,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -17571,6 +17594,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -17613,6 +17637,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -18204,6 +18229,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -18246,6 +18272,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -18288,6 +18315,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -18330,6 +18358,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19221,6 +19250,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="match_parent" />
             <xs:enumeration value="wrap_content" />
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19263,6 +19293,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19305,6 +19336,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19347,6 +19379,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19389,6 +19422,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19431,6 +19465,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19473,6 +19508,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19515,6 +19551,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19571,6 +19608,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="match_parent" />
             <xs:enumeration value="wrap_content" />
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -19930,6 +19968,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -20443,6 +20482,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -20549,6 +20589,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -20627,6 +20668,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -20811,6 +20853,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -20871,6 +20914,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -23921,6 +23965,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -23963,6 +24008,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -24005,6 +24051,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -24047,6 +24094,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -24089,6 +24137,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -24131,6 +24180,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -24173,6 +24223,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -24615,6 +24666,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -26568,6 +26620,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -27621,6 +27674,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -27663,6 +27717,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -28862,6 +28917,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -28904,6 +28960,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -29652,6 +29709,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -32099,6 +32157,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -32141,6 +32200,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -37010,6 +37070,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -38171,6 +38232,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -38213,6 +38275,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -38571,6 +38634,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -38613,6 +38677,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -38655,6 +38720,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -38697,6 +38763,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -38739,6 +38806,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -39010,6 +39078,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -39336,6 +39405,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -39378,6 +39448,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -39505,6 +39576,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -39547,6 +39619,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -39589,6 +39662,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -40109,6 +40183,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
@@ -41476,6 +41551,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@dimen/gif_side" />
             <xs:enumeration value="@dimen/left_m" />
             <xs:enumeration value="@dimen/right_m" />
             <xs:enumeration value="@dimen/top_m" />
