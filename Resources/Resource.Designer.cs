@@ -1744,8 +1744,8 @@ namespace SimpleList
 			// aapt resource value: 0x7f0a0013
 			public const int add = 2131361811;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int address_et = 2131361912;
+			// aapt resource value: 0x7f0a0079
+			public const int address_et = 2131361913;
 			
 			// aapt resource value: 0x7f0a003b
 			public const int alertTitle = 2131361851;
@@ -1762,11 +1762,11 @@ namespace SimpleList
 			// aapt resource value: 0x7f0a002e
 			public const int buttonPanel = 2131361838;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int button_save = 2131361913;
+			// aapt resource value: 0x7f0a007a
+			public const int button_save = 2131361914;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int button_search = 2131361905;
+			// aapt resource value: 0x7f0a0072
+			public const int button_search = 2131361906;
 			
 			// aapt resource value: 0x7f0a005c
 			public const int cancel_action = 2131361884;
@@ -1801,8 +1801,8 @@ namespace SimpleList
 			// aapt resource value: 0x7f0a0049
 			public const int edit_query = 2131361865;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int email_et = 2131361908;
+			// aapt resource value: 0x7f0a0075
+			public const int email_et = 2131361909;
 			
 			// aapt resource value: 0x7f0a001b
 			public const int end = 2131361819;
@@ -1819,8 +1819,8 @@ namespace SimpleList
 			// aapt resource value: 0x7f0a006f
 			public const int gifImage = 2131361903;
 			
-			// aapt resource value: 0x7f0a007a
-			public const int gifImageView = 2131361914;
+			// aapt resource value: 0x7f0a007b
+			public const int gifImageView = 2131361915;
 			
 			// aapt resource value: 0x7f0a0004
 			public const int home = 2131361796;
@@ -1888,8 +1888,8 @@ namespace SimpleList
 			// aapt resource value: 0x7f0a0030
 			public const int parentPanel = 2131361840;
 			
-			// aapt resource value: 0x7f0a0076
-			public const int phone_et = 2131361910;
+			// aapt resource value: 0x7f0a0077
+			public const int phone_et = 2131361911;
 			
 			// aapt resource value: 0x7f0a0005
 			public const int progress_circular = 2131361797;
@@ -1933,8 +1933,8 @@ namespace SimpleList
 			// aapt resource value: 0x7f0a004d
 			public const int search_edit_frame = 2131361869;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int search_et = 2131361904;
+			// aapt resource value: 0x7f0a0071
+			public const int search_et = 2131361905;
 			
 			// aapt resource value: 0x7f0a0053
 			public const int search_go_btn = 2131361875;
@@ -2008,17 +2008,20 @@ namespace SimpleList
 			// aapt resource value: 0x7f0a0034
 			public const int textSpacerNoTitle = 2131361844;
 			
-			// aapt resource value: 0x7f0a007b
-			public const int textView1 = 2131361915;
+			// aapt resource value: 0x7f0a007c
+			public const int textView1 = 2131361916;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int textView2 = 2131361907;
+			// aapt resource value: 0x7f0a0074
+			public const int textView2 = 2131361908;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int textView3 = 2131361909;
+			// aapt resource value: 0x7f0a0076
+			public const int textView3 = 2131361910;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int textView4 = 2131361911;
+			// aapt resource value: 0x7f0a0078
+			public const int textView4 = 2131361912;
+			
+			// aapt resource value: 0x7f0a0070
+			public const int textView6 = 2131361904;
 			
 			// aapt resource value: 0x7f0a0063
 			public const int time = 2131361891;
@@ -2044,8 +2047,8 @@ namespace SimpleList
 			// aapt resource value: 0x7f0a0012
 			public const int useLogo = 2131361810;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int user_name_text = 2131361906;
+			// aapt resource value: 0x7f0a0073
+			public const int user_name_text = 2131361907;
 			
 			// aapt resource value: 0x7f0a0021
 			public const int withText = 2131361825;
@@ -2397,6 +2400,9 @@ namespace SimpleList
 			
 			// aapt resource value: 0x7f050028
 			public const int google_storage_bucket = 2131034152;
+			
+			// aapt resource value: 0x7f050032
+			public const int key = 2131034162;
 			
 			// aapt resource value: 0x7f050013
 			public const int search_menu_title = 2131034131;

@@ -9,4 +9,5 @@
   <string name="SaveButtonText">Save data</string>
   <string name="Sort">Sort</string>
   <string name="Search">Search</string>
+  <string name="key">Key:</string>
 </resources>

@@ -1861,14 +1861,14 @@ containing a value of this type.
         public static final int actions=0x7f0a0068;
         public static final int activity_chooser_view_content=0x7f0a0027;
         public static final int add=0x7f0a0013;
-        public static final int address_et=0x7f0a0078;
+        public static final int address_et=0x7f0a0079;
         public static final int alertTitle=0x7f0a003b;
         public static final int always=0x7f0a001d;
         public static final int beginning=0x7f0a001a;
         public static final int bottom=0x7f0a0022;
         public static final int buttonPanel=0x7f0a002e;
-        public static final int button_save=0x7f0a0079;
-        public static final int button_search=0x7f0a0071;
+        public static final int button_save=0x7f0a007a;
+        public static final int button_search=0x7f0a0072;
         public static final int cancel_action=0x7f0a005c;
         public static final int checkbox=0x7f0a003e;
         public static final int chronometer=0x7f0a0064;
@@ -1880,13 +1880,13 @@ containing a value of this type.
         public static final int default_activity_button=0x7f0a002a;
         public static final int disableHome=0x7f0a000c;
         public static final int edit_query=0x7f0a0049;
-        public static final int email_et=0x7f0a0074;
+        public static final int email_et=0x7f0a0075;
         public static final int end=0x7f0a001b;
         public static final int end_padder=0x7f0a006e;
         public static final int expand_activities_button=0x7f0a0028;
         public static final int expanded_menu=0x7f0a003d;
         public static final int gifImage=0x7f0a006f;
-        public static final int gifImageView=0x7f0a007a;
+        public static final int gifImageView=0x7f0a007b;
         public static final int home=0x7f0a0004;
         public static final int homeAsUp=0x7f0a000d;
         public static final int icon=0x7f0a002c;
@@ -1909,7 +1909,7 @@ containing a value of this type.
         public static final int notification_main_column=0x7f0a0061;
         public static final int notification_main_column_container=0x7f0a0060;
         public static final int parentPanel=0x7f0a0030;
-        public static final int phone_et=0x7f0a0076;
+        public static final int phone_et=0x7f0a0077;
         public static final int progress_circular=0x7f0a0005;
         public static final int progress_horizontal=0x7f0a0006;
         public static final int radio=0x7f0a0040;
@@ -1924,7 +1924,7 @@ containing a value of this type.
         public static final int search_button=0x7f0a004c;
         public static final int search_close_btn=0x7f0a0051;
         public static final int search_edit_frame=0x7f0a004d;
-        public static final int search_et=0x7f0a0070;
+        public static final int search_et=0x7f0a0071;
         public static final int search_go_btn=0x7f0a0053;
         public static final int search_mag_icon=0x7f0a004e;
         public static final int search_plate=0x7f0a004f;
@@ -1949,10 +1949,11 @@ containing a value of this type.
         public static final int text2=0x7f0a006b;
         public static final int textSpacerNoButtons=0x7f0a0035;
         public static final int textSpacerNoTitle=0x7f0a0034;
-        public static final int textView1=0x7f0a007b;
-        public static final int textView2=0x7f0a0073;
-        public static final int textView3=0x7f0a0075;
-        public static final int textView4=0x7f0a0077;
+        public static final int textView1=0x7f0a007c;
+        public static final int textView2=0x7f0a0074;
+        public static final int textView3=0x7f0a0076;
+        public static final int textView4=0x7f0a0078;
+        public static final int textView6=0x7f0a0070;
         public static final int time=0x7f0a0063;
         public static final int title=0x7f0a002d;
         public static final int titleDividerNoCustom=0x7f0a003c;
@@ -1961,7 +1962,7 @@ containing a value of this type.
         public static final int topPanel=0x7f0a0039;
         public static final int up=0x7f0a0008;
         public static final int useLogo=0x7f0a0012;
-        public static final int user_name_text=0x7f0a0072;
+        public static final int user_name_text=0x7f0a0073;
         public static final int withText=0x7f0a0021;
         public static final int wrap_content=0x7f0a0019;
     }
@@ -2072,6 +2073,7 @@ containing a value of this type.
         public static final int google_app_id=0x7f050023;
         public static final int google_crash_reporting_api_key=0x7f050027;
         public static final int google_storage_bucket=0x7f050028;
+        public static final int key=0x7f050032;
         public static final int search_menu_title=0x7f050013;
         public static final int status_bar_notification_info_overflow=0x7f050014;
     }

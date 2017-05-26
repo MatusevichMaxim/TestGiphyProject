@@ -19,7 +19,7 @@ namespace SimpleList
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
-            Toast.MakeText(this, GetString(Resource.String.google_app_id), ToastLength.Short).Show();
+            //Toast.MakeText(this, GetString(Resource.String.google_app_id), ToastLength.Short).Show();
 
             if (!GetString(Resource.String.google_app_id).Equals("1:463204915779:android:c8bf0c7f75bb2b74"))
                 throw new System.Exception("Invalid Json file");

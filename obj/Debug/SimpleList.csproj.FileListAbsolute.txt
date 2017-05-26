@@ -67,5 +67,6 @@ C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\Xbd
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\SimpleList.csprojResolveAssemblyReference.cache
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\SimpleList.dll.mdb
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\SimpleList.dll.mdb
