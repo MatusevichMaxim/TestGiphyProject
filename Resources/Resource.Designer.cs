@@ -91,9 +91,6 @@ namespace SimpleList
 			// aapt resource value: 0x7f06000b
 			public const int address_et = 2131099659;
 			
-			// aapt resource value: 0x7f06000d
-			public const int avatar_image = 2131099661;
-			
 			// aapt resource value: 0x7f06000c
 			public const int button_save = 2131099660;
 			
@@ -105,6 +102,9 @@ namespace SimpleList
 			
 			// aapt resource value: 0x7f060002
 			public const int gifImage = 2131099650;
+			
+			// aapt resource value: 0x7f06000d
+			public const int gifImageView = 2131099661;
 			
 			// aapt resource value: 0x7f060001
 			public const int listView1 = 2131099649;

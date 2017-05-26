@@ -22,11 +22,11 @@ public final class R {
     }
     public static final class id {
         public static final int address_et=0x7f06000b;
-        public static final int avatar_image=0x7f06000d;
         public static final int button_save=0x7f06000c;
         public static final int button_search=0x7f060004;
         public static final int email_et=0x7f060007;
         public static final int gifImage=0x7f060002;
+        public static final int gifImageView=0x7f06000d;
         public static final int listView1=0x7f060001;
         public static final int phone_et=0x7f060009;
         public static final int search_et=0x7f060003;

@@ -7,5 +7,6 @@
         public string UserEmail { get; set; }
         public string UserPhone { get; set; }
         public string UserAddress { get; set; }
+        public string GifUrl { get; set; }
     }
 }

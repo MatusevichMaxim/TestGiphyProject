@@ -1,22 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
-using Newtonsoft.Json.Linq;
-using Android.Content.Res;
-using System.IO;
-using Newtonsoft.Json;
 using GiphyDotNet.Manager;
 using GiphyDotNet.Model.Parameters;
 using Felipecsl.GifImageViewLibrary;
 using System.Net.Http;
+using Android.Views.InputMethods;
 
 namespace SimpleList
 {
@@ -25,20 +16,21 @@ namespace SimpleList
     {
         GifImageView gifImage;
         string searchingText;
+        string url;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.UserInfo);
 
+            AutoCompleteTextView uAddress = FindViewById<AutoCompleteTextView>(Resource.Id.address_et);
             TextView uName = FindViewById<TextView>(Resource.Id.user_name_text);
             EditText uEmail = FindViewById<EditText>(Resource.Id.email_et);
             EditText uPhone = FindViewById<EditText>(Resource.Id.phone_et);
-            AutoCompleteTextView uAddress = FindViewById<AutoCompleteTextView>(Resource.Id.address_et);
             EditText searchTextView = FindViewById<EditText>(Resource.Id.search_et);
             gifImage = FindViewById<GifImageView>(Resource.Id.gifImage);
 
-            //GetGif();
+            InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
 
             User user = JSONData.usersObj[JSONData.currentUser];
 
@@ -46,7 +38,9 @@ namespace SimpleList
             uEmail.Text = user.UserEmail;
             uPhone.Text = user.UserPhone;
             uAddress.Text = user.UserAddress;
-            
+
+            GetGif(user.GifUrl);
+
             Button saveButton = FindViewById<Button>(Resource.Id.button_save);
             saveButton.Click += (s, e) =>
             {
@@ -58,6 +52,7 @@ namespace SimpleList
                     user.UserPhone = uPhone.Text;
                 if (uAddress.Text != null)
                     user.UserAddress = uAddress.Text;
+                user.GifUrl = url;
 
                 JSONData.Serializing(this);
 
@@ -68,15 +63,18 @@ namespace SimpleList
             Button searchButton = FindViewById<Button>(Resource.Id.button_search);
             searchButton.Click += (s, e) =>
             {
-                Toast.MakeText(this, "Search!", ToastLength.Short).Show();
+                Toast.MakeText(this, "Searching...", ToastLength.Short).Show();
                 searchingText = searchTextView.Text.ToString();
                 searchingText.Replace(" ", "+");
 
-                GetGif();
+                // hide keyboard
+                imm.HideSoftInputFromWindow(this.CurrentFocus.WindowToken, HideSoftInputFlags.NotAlways);
+
+                GetGif(null);
             };
         }
         
-        public async void GetGif()
+        async void GetGif(string url)
         {
             var giphy = new Giphy("dc6zaTOxFJmzC");
             var gifresult = await giphy.RandomGif(new RandomParameter()
@@ -88,14 +86,25 @@ namespace SimpleList
             {
                 using (var client = new HttpClient())
                 {
-                    var bytes = await client.GetByteArrayAsync("https://media.giphy.com/media/" + gifresult.Data.Id.ToString() + "/giphy.gif");
+                    if (url == null) // refresh gif
+                    {
+                        this.url = "https://media.giphy.com/media/" + gifresult.Data.Id.ToString() + "/giphy.gif";
+                        //Toast.MakeText(this, "1", ToastLength.Short).Show();
+                    }
+                    else // load from json
+                    {
+                        this.url = url;
+                        //Toast.MakeText(this, "2", ToastLength.Short).Show();
+                    }
+
+                    var bytes = await client.GetByteArrayAsync(this.url);
                     gifImage.SetBytes(bytes);
                     gifImage.StartAnimation();
                 }
             }
             catch (Exception e)
             {
-                Toast.MakeText(this, "ne rabotaet", ToastLength.Short).Show();
+                Toast.MakeText(this, "Bad connection", ToastLength.Short).Show();
             }
         }
     }
