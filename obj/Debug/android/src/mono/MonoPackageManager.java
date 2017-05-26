@@ -102,8 +102,22 @@ class MonoPackageManager_Resources {
 		"GiphyDotNet.dll",
 		"Newtonsoft.Json.dll",
 		"Refractored.GifImageView.dll",
+		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Tasks.dll",
+		"Xamarin.Firebase.Common.dll",
+		"Xamarin.Firebase.Iid.dll",
+		"Xamarin.Firebase.Messaging.dll",
+		"Xamarin.Android.Support.Compat.dll",
+		"Xamarin.Android.Support.Core.UI.dll",
+		"Xamarin.Android.Support.Core.Utils.dll",
+		"Xamarin.Android.Support.Media.Compat.dll",
+		"Xamarin.Android.Support.Fragment.dll",
+		"Xamarin.Android.Support.v4.dll",
+		"Xamarin.Android.Support.Vector.Drawable.dll",
+		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
+		"Xamarin.Android.Support.v7.AppCompat.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_21";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_24";
 }

@@ -3,6 +3,8 @@
   <Jars></Jars>
   <ResolvedResourceDirectories>
     <ResolvedResourceDirectory>C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\__library_projects__\Refractored.GifImageView\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Basement\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Refractored.GifImageView\library_project_imports\assets</ResolvedAssetDirectory>
@@ -10,5 +12,7 @@
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
     <ResolvedResourceDirectoryStamp>C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\__library_projects__\Refractored.GifImageView.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\__library_projects__\Xamarin.GooglePlayServices.Basement.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

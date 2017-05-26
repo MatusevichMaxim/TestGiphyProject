@@ -15,6 +15,6 @@ AndroidSequencePointsMode=None
 XamarinAndroidVersion=7.3.0-13
 MonoSymbolArchive=False
 AndroidUseLatestPlatformSdk=false
-TargetFrameworkVersion=v5.0
+TargetFrameworkVersion=v7.0
 AndroidCreatePackagePerAbi=
 OS=Windows_NT
