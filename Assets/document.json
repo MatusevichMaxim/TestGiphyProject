@@ -6,34 +6,40 @@
 		"userName":"Eugene", 
 		"userEmail":"hardiaf@gmail.com", 
 		"userPhone":"375(29)1231233", 
-		"userAddress":"akademicheskaya 67-107"
+		"userAddress":"akademicheskaya 67-107",
+		"gifUrl":"https://media.giphy.com/media/3owzVStaelO44OJfTW/giphy.gif"
 	 },
      {
 		"userId": 2, 
 		"userName":"Alex", 
 		"userEmail":"mirageti@gmail.com", 
 		"userPhone":"375(29)4897545", 
-		"userAddress":"centralnaya 13A-7"
+		"userAddress":"centralnaya 13A-7",
+		"gifUrl":"https://media.giphy.com/media/l3q2Okm6SwPwXZqp2/giphy.gif"
 	 },      
      {
 		"userId": 3, 
 		"userName":"Sam", 
 		"userEmail":"aldon@gmail.com", 
 		"userPhone":"375(29)2648732", 
-		"userAddress":"keramicheskaya 8-63"},      
+		"userAddress":"keramicheskaya 8-63",  
+		"gifUrl":"https://media.giphy.com/media/xUPGcANuYN4yk78oH6/giphy.gif"
+	 },
      {
 		"userId": 4, 
 		"userName":"Eric", 
 		"userEmail":"lelf@gmail.com", 
 		"userPhone":"375(29)6987564", 
-		"userAddress":"lenina 33-10"
+		"userAddress":"lenina 33-10",
+		"gifUrl":"https://media.giphy.com/media/11u7t453jrQxY4/giphy.gif"
 	 },      
      {
 		"userId": 5, 
 		"userName":"Govard", 
 		"userEmail":"horeif@gmail.com", 
 		"userPhone":"375(44)8794684", 
-		"userAddress":"pobedi 5-17"
+		"userAddress":"pobedi 5-17",
+		"gifUrl":"https://media.giphy.com/media/l41lG2QN72EPHWwkE/giphy.gif"
 	 } 
   ]
 }

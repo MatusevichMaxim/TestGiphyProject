@@ -3,6 +3,34 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_m">
+        <com.felipecsl.gifimageview.library.GifImageView
+            android:src="@drawable/blank_avatar"
+            android:layout_width="@dimen/gif_side"
+            android:layout_height="@dimen/gif_side"
+            android:layout_gravity="left"
+            android:id="@+id/gifImage"
+            android:layout_marginLeft="@dimen/left_m" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/search_et"
+            android:layout_marginLeft="@dimen/left_m"
+            android:layout_marginRight="@dimen/right_m" />
+    </LinearLayout>
+    <Button
+        android:text="@string/Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_search"
+        android:layout_marginLeft="@dimen/left_m"
+        android:layout_marginTop="@dimen/top_m" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"

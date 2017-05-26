@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Android.App;
 using Android.Content;
 using Android.Widget;
 using Android.OS;
-using System.Linq;
 
 namespace SimpleList
 {
@@ -29,7 +27,7 @@ namespace SimpleList
 
             for (int i = 0; i < USERS_COUNT; i++)
             {
-                list.Add(new ListElement() { ID = i, Name = JSONData.usersObj[i].UserName });
+                list.Add(new ListElement() { ID = i, Name = JSONData.usersObj[i].UserName, Url = JSONData.usersObj[i].GifUrl });
             }
 
             SetAdapter(list);

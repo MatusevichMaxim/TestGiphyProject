@@ -36,5 +36,7 @@ C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\res
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\res\values\dimens.xml
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\R.cs.flag
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\uploadflags.txt
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\GiphyDotNet.dll
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\Refractored.GifImageView.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\bin\Debug\SimpleList.dll.mdb
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\SimpleList.dll.mdb

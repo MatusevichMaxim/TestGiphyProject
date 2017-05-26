@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v21</xs:documentation>
-    <xs:documentation>5/25/2017 9:48:41 AM</xs:documentation>
+    <xs:documentation>5/26/2017 11:20:06 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -12,9 +12,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@layout/main" />
-            <xs:enumeration value="@layout/userinfo" />
-            <xs:enumeration value="@layout/useritem" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -62,9 +59,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@layout/main" />
-            <xs:enumeration value="@layout/userinfo" />
-            <xs:enumeration value="@layout/useritem" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -112,9 +106,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@layout/main" />
-            <xs:enumeration value="@layout/userinfo" />
-            <xs:enumeration value="@layout/useritem" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -162,9 +153,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@layout/main" />
-            <xs:enumeration value="@layout/userinfo" />
-            <xs:enumeration value="@layout/useritem" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -212,14 +200,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
