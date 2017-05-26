@@ -21,19 +21,21 @@ public final class R {
         public static final int icon=0x7f020001;
     }
     public static final class id {
-        public static final int address_et=0x7f060009;
-        public static final int avatar_image=0x7f06000b;
-        public static final int button_save=0x7f06000a;
-        public static final int email_et=0x7f060005;
-        public static final int gif_imageview=0x7f060002;
+        public static final int address_et=0x7f06000b;
+        public static final int avatar_image=0x7f06000d;
+        public static final int button_save=0x7f06000c;
+        public static final int button_search=0x7f060004;
+        public static final int email_et=0x7f060007;
+        public static final int gifImage=0x7f060002;
         public static final int listView1=0x7f060001;
-        public static final int phone_et=0x7f060007;
+        public static final int phone_et=0x7f060009;
+        public static final int search_et=0x7f060003;
         public static final int sort_button=0x7f060000;
-        public static final int textView1=0x7f06000c;
-        public static final int textView2=0x7f060004;
-        public static final int textView3=0x7f060006;
-        public static final int textView4=0x7f060008;
-        public static final int user_name_text=0x7f060003;
+        public static final int textView1=0x7f06000e;
+        public static final int textView2=0x7f060006;
+        public static final int textView3=0x7f060008;
+        public static final int textView4=0x7f06000a;
+        public static final int user_name_text=0x7f060005;
     }
     public static final class layout {
         public static final int main=0x7f030000;
@@ -44,6 +46,7 @@ public final class R {
         public static final int ApplicationName=0x7f050001;
         public static final int Hello=0x7f050000;
         public static final int SaveButtonText=0x7f050006;
+        public static final int Search=0x7f050008;
         public static final int Sort=0x7f050007;
         public static final int UserAddress=0x7f050005;
         public static final int UserEmail=0x7f050003;

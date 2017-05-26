@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v21</xs:documentation>
-    <xs:documentation>5/26/2017 12:27:41 AM</xs:documentation>
+    <xs:documentation>5/26/2017 1:17:21 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -15,6 +15,42 @@
             <xs:enumeration value="assertive" />
             <xs:enumeration value="none" />
             <xs:enumeration value="polite" />
+            <xs:enumeration value="@android:integer/config_longAnimTime" />
+            <xs:enumeration value="@android:integer/config_mediumAnimTime" />
+            <xs:enumeration value="@android:integer/config_shortAnimTime" />
+            <xs:enumeration value="@android:integer/status_bar_notification_info_maxnum" />
+            <xs:enumeration value="?android:attr/windowTransitionBackgroundFadeDuration" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="accessibilityTraversalAfter">
+    <xs:annotation>
+      <xs:documentation>Sets the id of a view after which this one is visited in accessibility traversal. A screen-reader must visit the content of the other view before the content of this one. @see android.view.View#setAccessibilityTraversalAfter(int)}</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@android:integer/config_longAnimTime" />
+            <xs:enumeration value="@android:integer/config_mediumAnimTime" />
+            <xs:enumeration value="@android:integer/config_shortAnimTime" />
+            <xs:enumeration value="@android:integer/status_bar_notification_info_maxnum" />
+            <xs:enumeration value="?android:attr/windowTransitionBackgroundFadeDuration" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="accessibilityTraversalBefore">
+    <xs:annotation>
+      <xs:documentation>Sets the id of a view before which this one is visited in accessibility traversal. A screen-reader must visit the content of this view before the content of the one it precedes. @see android.view.View#setAccessibilityTraversalBefore(int)}</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
             <xs:enumeration value="@android:integer/config_longAnimTime" />
             <xs:enumeration value="@android:integer/config_mediumAnimTime" />
             <xs:enumeration value="@android:integer/config_shortAnimTime" />
@@ -772,8 +808,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -1185,10 +1219,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -1324,10 +1354,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -1383,8 +1409,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2115,8 +2139,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2469,8 +2491,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -2774,8 +2794,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3003,10 +3021,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -3046,10 +3060,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -3089,10 +3099,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -3132,10 +3138,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -3398,8 +3400,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3627,14 +3627,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -3673,8 +3665,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3959,10 +3949,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -4002,8 +3988,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4231,14 +4215,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -4277,8 +4253,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4524,8 +4498,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4753,14 +4725,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -4799,10 +4763,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -4842,10 +4802,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -4885,10 +4841,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -4928,10 +4880,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -4958,6 +4906,45 @@
             <xs:enumeration value="?android:attr/preferenceFragmentPaddingSide" />
             <xs:enumeration value="?android:attr/textUnderlineThickness" />
             <xs:enumeration value="?android:attr/windowTitleSize" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="contextClickable">
+    <xs:annotation>
+      <xs:documentation>Defines whether this view reacts to context click events.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
           </xs:restriction>
         </xs:simpleType>
       </xs:union>
@@ -5064,8 +5051,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5293,8 +5278,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -5598,8 +5581,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5843,8 +5824,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6072,14 +6051,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -6181,10 +6152,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -6224,10 +6191,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -6285,8 +6248,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -6590,8 +6551,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -6895,8 +6854,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7200,10 +7157,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -7243,8 +7196,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7548,8 +7499,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7853,8 +7802,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8213,8 +8160,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8444,10 +8389,6 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="match_parent" />
             <xs:enumeration value="wrap_content" />
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -8487,8 +8428,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8794,10 +8733,6 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="match_parent" />
             <xs:enumeration value="wrap_content" />
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -8915,8 +8850,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9183,10 +9116,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -9319,8 +9248,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9717,10 +9644,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -9838,8 +9761,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10298,8 +10219,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -10603,14 +10522,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -10649,14 +10560,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -10726,6 +10629,45 @@
       </xs:union>
     </xs:simpleType>
   </xs:attribute>
+  <xs:attribute name="forceHasOverlappingRendering">
+    <xs:annotation>
+      <xs:documentation>Whether this view has elements that may overlap when drawn. See android.view.View.forceHasOverlappingRendering(boolean).</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
   <xs:attribute name="foreground">
     <xs:annotation>
       <xs:documentation>Defines the drawable to draw over the content. This can be used as an overlay. The foreground drawable participates in the padding of the content if the gravity is set to fill.</xs:documentation>
@@ -10734,8 +10676,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -11211,14 +11151,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11257,14 +11189,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11303,14 +11227,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11349,8 +11265,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11578,8 +11492,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11807,8 +11719,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12036,8 +11946,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12265,8 +12173,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12494,8 +12400,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12723,8 +12627,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12952,8 +12854,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13372,8 +13272,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13628,8 +13526,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13857,8 +13753,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14086,8 +13980,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14315,8 +14207,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14583,8 +14473,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14812,8 +14700,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -15117,8 +15003,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15385,8 +15269,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15608,7 +15490,7 @@
   </xs:attribute>
   <xs:attribute name="headerSelectedTextColor">
     <xs:annotation>
-      <xs:documentation>@hide The selected text color for the date selector. Used as a backup if the text appearance does not explicitly have a color set for the selected state.</xs:documentation>
+      <xs:documentation>@hide The text color for selected time header of the TimePicker. This will override the value from the text appearance if it does not explicitly have a color set for the selected state.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
@@ -15703,8 +15585,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15932,8 +15812,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16161,10 +16039,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -16243,14 +16117,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -16289,10 +16155,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -16373,19 +16235,6 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/timePicker1" />
-            <xs:enumeration value="@id/address_et" />
-            <xs:enumeration value="@id/avatar_image" />
-            <xs:enumeration value="@id/button_save" />
-            <xs:enumeration value="@id/email_et" />
-            <xs:enumeration value="@id/gif_imageview" />
-            <xs:enumeration value="@id/listView1" />
-            <xs:enumeration value="@id/phone_et" />
-            <xs:enumeration value="@id/sort_button" />
-            <xs:enumeration value="@id/textView1" />
-            <xs:enumeration value="@id/textView2" />
-            <xs:enumeration value="@id/textView3" />
-            <xs:enumeration value="@id/textView4" />
-            <xs:enumeration value="@id/user_name_text" />
             <xs:enumeration value="@android:id/addToDictionary" />
             <xs:enumeration value="@android:id/background" />
             <xs:enumeration value="@android:id/button1" />
@@ -16448,8 +16297,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16695,14 +16542,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -16792,8 +16631,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17114,8 +16951,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17508,10 +17343,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -17551,10 +17382,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -17594,10 +17421,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -17637,10 +17460,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -17680,8 +17499,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17909,14 +17726,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -18000,8 +17809,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18229,10 +18036,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -18272,10 +18075,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -18315,10 +18114,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -18358,10 +18153,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -18401,8 +18192,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18747,8 +18536,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18992,8 +18779,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19250,10 +19035,6 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="match_parent" />
             <xs:enumeration value="wrap_content" />
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -19293,10 +19074,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -19336,10 +19113,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -19379,10 +19152,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -19422,10 +19191,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -19465,10 +19230,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -19508,10 +19269,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -19551,10 +19308,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -19608,10 +19361,6 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="match_parent" />
             <xs:enumeration value="wrap_content" />
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -19709,8 +19458,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19968,10 +19715,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -20062,8 +19805,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -20482,10 +20223,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -20525,14 +20262,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -20589,10 +20318,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -20668,10 +20393,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -20789,14 +20510,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -20853,10 +20566,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -20914,10 +20623,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -21024,8 +20729,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21253,14 +20956,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -21299,8 +20994,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21567,8 +21260,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21796,8 +21487,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22025,8 +21714,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22254,8 +21941,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22483,8 +22168,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23032,14 +22715,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -23093,8 +22768,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23339,8 +23012,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -23644,8 +23315,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -23965,10 +23634,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -24008,10 +23673,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -24051,10 +23712,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -24094,10 +23751,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -24137,10 +23790,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -24180,10 +23829,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -24223,10 +23868,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -24353,6 +23994,41 @@
       </xs:union>
     </xs:simpleType>
   </xs:attribute>
+  <xs:attribute name="pointerIcon">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="alias" />
+            <xs:enumeration value="all_scroll" />
+            <xs:enumeration value="arrow" />
+            <xs:enumeration value="cell" />
+            <xs:enumeration value="context_menu" />
+            <xs:enumeration value="copy" />
+            <xs:enumeration value="crosshair" />
+            <xs:enumeration value="grab" />
+            <xs:enumeration value="grabbing" />
+            <xs:enumeration value="hand" />
+            <xs:enumeration value="help" />
+            <xs:enumeration value="horizontal_double_arrow" />
+            <xs:enumeration value="no_drop" />
+            <xs:enumeration value="none" />
+            <xs:enumeration value="text" />
+            <xs:enumeration value="top_left_diagonal_double_arrow" />
+            <xs:enumeration value="top_right_diagonal_double_arrow" />
+            <xs:enumeration value="vertical_double_arrow" />
+            <xs:enumeration value="vertical_text" />
+            <xs:enumeration value="wait" />
+            <xs:enumeration value="zoom_in" />
+            <xs:enumeration value="zoom_out" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
   <xs:attribute name="popupBackground">
     <xs:annotation>
       <xs:documentation></xs:documentation>
@@ -24361,8 +24037,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -24666,10 +24340,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -24709,8 +24379,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24938,8 +24606,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25167,14 +24833,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -25339,8 +24997,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25676,8 +25332,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25905,8 +25559,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26134,14 +25786,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -26620,10 +26264,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -26680,8 +26320,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26909,8 +26547,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27138,8 +26774,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27367,8 +27001,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27627,6 +27259,26 @@
       </xs:union>
     </xs:simpleType>
   </xs:attribute>
+  <xs:attribute name="scrollIndicators">
+    <xs:annotation>
+      <xs:documentation>Defines which scroll indicators should be displayed when the view can be scrolled. Multiple values may be combined using logical OR, for example "top|bottom".</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="bottom" />
+            <xs:enumeration value="end" />
+            <xs:enumeration value="left" />
+            <xs:enumeration value="none" />
+            <xs:enumeration value="right" />
+            <xs:enumeration value="start" />
+            <xs:enumeration value="top" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
   <xs:attribute name="scrollingCache">
     <xs:annotation>
       <xs:documentation>When set to true, the list uses a drawing cache during scrolling. This makes the rendering faster but uses more memory. The default value is true.</xs:documentation>
@@ -27674,10 +27326,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -27717,10 +27365,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -27760,8 +27404,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28154,8 +27796,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28383,8 +28023,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -28688,8 +28326,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28917,10 +28553,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -28960,10 +28592,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -29241,14 +28869,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -29365,8 +28985,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -29709,10 +29327,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -29884,8 +29498,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -30246,8 +29858,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -30487,14 +30097,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -31424,8 +31026,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31653,14 +31253,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -31699,8 +31291,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31928,8 +31518,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32157,10 +31745,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -32200,10 +31784,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -32243,8 +31823,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32472,8 +32050,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32740,8 +32316,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32969,8 +32543,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33198,14 +32770,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -33244,14 +32808,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -33354,8 +32910,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33583,8 +33137,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -33888,8 +33440,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -34193,8 +33743,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -34498,8 +34046,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -34803,8 +34349,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35056,8 +34600,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35285,8 +34827,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35514,8 +35054,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35743,8 +35281,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35972,8 +35508,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36279,14 +35813,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -36325,14 +35851,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -36383,8 +35901,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36612,8 +36128,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36841,8 +36355,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37070,10 +36582,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -38003,8 +37511,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -38232,10 +37738,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -38275,10 +37777,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -38441,14 +37939,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -38588,14 +38078,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -38634,10 +38116,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -38677,10 +38155,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -38720,10 +38194,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -38763,10 +38233,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -38806,10 +38272,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -38849,8 +38311,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39078,10 +38538,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -39160,8 +38616,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39405,10 +38859,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -39448,10 +38898,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -39530,14 +38976,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@string/ApplicationName" />
-            <xs:enumeration value="@string/Hello" />
-            <xs:enumeration value="@string/SaveButtonText" />
-            <xs:enumeration value="@string/Sort" />
-            <xs:enumeration value="@string/UserAddress" />
-            <xs:enumeration value="@string/UserEmail" />
-            <xs:enumeration value="@string/UserName" />
-            <xs:enumeration value="@string/UserPhone" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -39576,10 +39014,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -39619,10 +39053,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -39662,10 +39092,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -39811,8 +39237,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -40183,10 +39607,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -40226,8 +39646,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40471,8 +39889,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40700,8 +40116,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40929,8 +40343,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -41234,8 +40646,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -41551,10 +40961,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@dimen/gif_side" />
-            <xs:enumeration value="@dimen/left_m" />
-            <xs:enumeration value="@dimen/right_m" />
-            <xs:enumeration value="@dimen/top_m" />
             <xs:enumeration value="@android:dimen/app_icon_size" />
             <xs:enumeration value="@android:dimen/dialog_min_width_major" />
             <xs:enumeration value="@android:dimen/dialog_min_width_minor" />
@@ -41594,8 +41000,6 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="@drawable/blank_avatar" />
-            <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

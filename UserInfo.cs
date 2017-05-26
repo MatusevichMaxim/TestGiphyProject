@@ -15,14 +15,16 @@ using System.IO;
 using Newtonsoft.Json;
 using GiphyDotNet.Manager;
 using GiphyDotNet.Model.Parameters;
-using static Android.App.DownloadManager;
+using Felipecsl.GifImageViewLibrary;
+using System.Net.Http;
 
 namespace SimpleList
 {
     [Activity(Label = "UserInfo")]
     class UserInfo : Activity
     {
-        ImageView glideImage;
+        GifImageView gifImage;
+        string searchingText;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,9 +35,10 @@ namespace SimpleList
             EditText uEmail = FindViewById<EditText>(Resource.Id.email_et);
             EditText uPhone = FindViewById<EditText>(Resource.Id.phone_et);
             AutoCompleteTextView uAddress = FindViewById<AutoCompleteTextView>(Resource.Id.address_et);
+            EditText searchTextView = FindViewById<EditText>(Resource.Id.search_et);
+            gifImage = FindViewById<GifImageView>(Resource.Id.gifImage);
 
-            glideImage = FindViewById<ImageView>(Resource.Id.gif_imageview);
-            GetGif();
+            //GetGif();
 
             User user = JSONData.usersObj[JSONData.currentUser];
 
@@ -43,7 +46,7 @@ namespace SimpleList
             uEmail.Text = user.UserEmail;
             uPhone.Text = user.UserPhone;
             uAddress.Text = user.UserAddress;
-
+            
             Button saveButton = FindViewById<Button>(Resource.Id.button_save);
             saveButton.Click += (s, e) =>
             {
@@ -61,15 +64,39 @@ namespace SimpleList
                 Intent intent = new Intent(this, typeof(MainActivity));
                 StartActivity(intent);
             };
-        }
 
-        async void GetGif()
+            Button searchButton = FindViewById<Button>(Resource.Id.button_search);
+            searchButton.Click += (s, e) =>
+            {
+                Toast.MakeText(this, "Search!", ToastLength.Short).Show();
+                searchingText = searchTextView.Text.ToString();
+                searchingText.Replace(" ", "+");
+
+                GetGif();
+            };
+        }
+        
+        public async void GetGif()
         {
             var giphy = new Giphy("dc6zaTOxFJmzC");
             var gifresult = await giphy.RandomGif(new RandomParameter()
             {
-                Tag = "american psycho"
+                Tag = searchingText
             });
+
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    var bytes = await client.GetByteArrayAsync("https://media.giphy.com/media/" + gifresult.Data.Id.ToString() + "/giphy.gif");
+                    gifImage.SetBytes(bytes);
+                    gifImage.StartAnimation();
+                }
+            }
+            catch (Exception e)
+            {
+                Toast.MakeText(this, "ne rabotaet", ToastLength.Short).Show();
+            }
         }
     }
 }

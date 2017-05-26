@@ -8,6 +8,7 @@ C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\and
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\mscorlib.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Core.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.dll
+C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Net.Http.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Xml.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Runtime.dll
@@ -16,7 +17,6 @@ C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\and
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Collections.Specialized.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Threading.Tasks.dll
-C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Net.Http.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Linq.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Users\Maxim\Desktop\Projects\Net projects\SimpleList\SimpleList\obj\Debug\android\assets\System.Net.Requests.dll
