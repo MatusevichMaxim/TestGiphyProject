@@ -3,6 +3,8 @@ using Android.App;
 using Android.Content;
 using Android.Widget;
 using Android.OS;
+using System.Threading.Tasks;
+using Firebase.Iid;
 
 namespace SimpleList
 {
@@ -17,6 +19,17 @@ namespace SimpleList
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
+            Toast.MakeText(this, GetString(Resource.String.google_app_id), ToastLength.Short).Show();
+
+            if (!GetString(Resource.String.google_app_id).Equals("1:463204915779:android:c8bf0c7f75bb2b74"))
+                throw new System.Exception("Invalid Json file");
+
+            Task.Run(() => {
+                var instanceId = FirebaseInstanceId.Instance;
+                instanceId.DeleteInstanceId();
+                Android.Util.Log.Debug("TAG", "{0} {1}", instanceId.Token, instanceId.GetToken(GetString(Resource.String.gcm_defaultSenderId), Firebase.Messaging.FirebaseMessaging.InstanceIdScope));
+
+            });
 
             // load from json
             JSONData.Deserializing(this);
